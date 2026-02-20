@@ -145,6 +145,8 @@ else:
         dcc.Graph(figure=fig_scatter),
         html.P(f"Este gráfico responde ao objetivo principal (III) do projeto ao calcular a correlação estatística entre as séries. O coeficiente de Pearson global calculado é r = {r:.3f} (p-valor: {p_value:.3f}), demonstrando a direção e a força da relação entre pressão inflacionária e mercado de trabalho regional.", style={'fontStyle': 'italic'})
     ])
+    
+server = app.server
 
 if __name__ == '__main__':
     app.run_server(debug=True)
